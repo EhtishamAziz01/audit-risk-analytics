@@ -59,11 +59,7 @@ selected = st.sidebar.radio("Navigation", list(pages.keys()), label_visibility="
 page = pages[selected]
 
 st.sidebar.markdown("---")
-st.sidebar.markdown(
-    "**Built for:**  \n"
-    "Deloitte Future Leaders Academy  \n"
-    "Audit & Assurance — Data Analytics"
-)
+
 st.sidebar.markdown(
     "**Tech Stack:**  \n"
     "Python · Scikit-learn · DuckDB · Streamlit"

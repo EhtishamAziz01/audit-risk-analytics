@@ -148,9 +148,6 @@ The dataset is intentionally imbalanced (0.17% fraud), which is realistic — in
 - **Docker** — containerised deployment
 - **pytest** — testing
 
-## Built for
-
-This project was built to demonstrate practical data analytics skills for audit and financial risk assessment — specifically the kind of work done by data analytics teams within audit & assurance practices.
 
 ## License
 
