@@ -49,11 +49,11 @@ st.sidebar.title("🔍 Audit Risk Analytics")
 st.sidebar.markdown("---")
 
 pages = {
-    "📊 Overview": "overview",
-    "🔎 Transaction Explorer": "explorer",
-    "🧠 Anomaly Analysis": "anomaly",
-    "⚖️ Risk Distribution": "risk",
-    "📋 Findings Report": "report",
+    "Overview": "overview",
+    "Transaction Explorer": "explorer",
+    "Anomaly Analysis": "anomaly",
+    "Risk Distribution": "risk",
+    "Findings Report": "report",
 }
 selected = st.sidebar.radio("Navigation", list(pages.keys()), label_visibility="collapsed")
 page = pages[selected]
