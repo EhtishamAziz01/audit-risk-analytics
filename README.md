@@ -17,14 +17,22 @@ The idea is straightforward: if you're auditing a company's transactions, you ca
 
 ## Screenshots
 
-### Dashboard Overview
-![Dashboard showing KPIs, risk distribution, and hourly transaction volume](assets/dashboard_overview.png)
+**Dashboard & Overview**
+<p align="center">
+  <img src="Images/01_dashboard.png" width="48%">
+  <img src="Images/02_overview.png" width="48%">
+</p>
 
-### Transaction Explorer
-![Filterable table of high-risk transactions with detailed scores](assets/transaction_explorer.png)
+**Transaction Explorer & Risk Distribution**
+<p align="center">
+  <img src="Images/03_explorer.png" width="48%">
+  <img src="Images/04_risk_dist.png" width="48%">
+</p>
 
-### Risk Distribution
-![Risk heatmap and cumulative fraud detection curve](assets/risk_distribution.png)
+**Audit Findings Report**
+<p align="center">
+  <img src="Images/05_report.png" width="100%">
+</p>
 
 ## Key Results
 
