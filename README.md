@@ -1,5 +1,7 @@
 # Audit Risk Analytics
 
+**[▶ Live Demo](https://audit-risk-analytics.streamlit.app)**
+
 An end-to-end financial transaction analytics project that detects anomalies and scores risk across 284K credit card transactions. Built to simulate real audit analytics work — the kind of analysis a data analyst in an audit & assurance team would actually do.
 
 ## What it does
