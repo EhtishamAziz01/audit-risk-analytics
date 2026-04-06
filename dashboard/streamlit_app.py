@@ -19,10 +19,19 @@ st.set_page_config(
 )
 
 # ── Shared Data Loading ────────────────────────────────────
-@st.cache_data(show_spinner="Loading and processing data...")
-def load_full_pipeline():
-    """Run the full pipeline and cache the result."""
+DASHBOARD_DATA = PROJECT_ROOT / "data" / "processed" / "dashboard_data.parquet.gz"
+
+
+@st.cache_data(show_spinner="Loading data...")
+def load_data():
+    """Load pre-computed dashboard data. Falls back to full pipeline for local dev."""
     import pandas as pd
+
+    if DASHBOARD_DATA.exists():
+        df = pd.read_parquet(DASHBOARD_DATA)
+        return df
+
+    # Fallback: run full pipeline locally
     from src.config import PROCESSED_PARQUET
     from src.feature_engineering import engineer_all_features
     from src.anomaly_model import run_anomaly_detection
@@ -61,7 +70,7 @@ st.sidebar.markdown(
 )
 
 # Load data
-df = load_full_pipeline()
+df = load_data()
 
 # ── Helper ─────────────────────────────────────────────────
 CAT_COLORS = {"low": "#27ae60", "medium": "#f39c12", "high": "#e67e22", "critical": "#e74c3c"}
